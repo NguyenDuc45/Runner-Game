@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static float terrainSpeed = 8f;
     public TextMeshProUGUI distanceText;
     public static float distance;
-    float counter = 0, maxCount = 100;
+    float counter = 0, maxCount = 20;
 
     public static bool isPaused = false;
     public GameObject pauseMenu;

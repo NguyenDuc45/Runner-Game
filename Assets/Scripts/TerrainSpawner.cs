@@ -6,7 +6,7 @@ public class TerrainSpawner : MonoBehaviour
 {
     public GameObject[] t11, t12, t21, t22, t23, t31, t32, t33;
     float counter = 0;
-    float cooldown = 21f * (1 / GameManager.terrainSpeed) - 0.01f;
+    float cooldown = 21f * (1 / GameManager.terrainSpeed) - 0.02f;
     string terrainName, nameA = "1", nameB = "1";
     Dictionary<string, GameObject> nameMatch = new Dictionary<string, GameObject>();
 
