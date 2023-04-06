@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.tag.Equals("Barrier")) {
             playerHealth = 0;
+            hitSound.Play();
         }
     }
 
