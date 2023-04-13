@@ -21,7 +21,8 @@ public class Player : MonoBehaviour
     float y1, y2 = 0f;
     float jumpTime = 0.4f, jumpTimeCounter;
     public static int playerHealth;
-    bool isGrounded, isJumping, isInvulnerable = false, isDead;
+    bool isGrounded, isJumping, isDead;
+    //bool isInvulnerable = false;
 
 
     // Start is called before the first frame update
@@ -152,7 +153,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    IEnumerator GettingHit()
+    /*IEnumerator GettingHit()
     {
         Debug.Log("Collided with an object");
         isInvulnerable = true;
@@ -162,11 +163,11 @@ public class Player : MonoBehaviour
         Debug.Log("End of invulnerability");
         isInvulnerable = false;
         playerCollider.isTrigger = false;
-    }
+    }*/
 
     IEnumerator ShowGameOverMenu()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         gameOverMenu.SetActive(true);
     }
 }
